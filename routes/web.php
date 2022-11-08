@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Rute baru mengarahkan kategory Controller
+Route::resource('category', App\Http\Controllers\CategoryController::class);
