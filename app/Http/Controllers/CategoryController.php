@@ -15,7 +15,7 @@ class CategoryController extends Controller
     public function index()
     {
         //
-        return view('master');
+        return view('layouts.category.index');
     }
 
     /**
