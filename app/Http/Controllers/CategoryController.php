@@ -14,8 +14,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
-        return view('layouts.category.index');
+        // passing data
+        // sama aja kaya select * from category
+        $category = Category::all();
+        return view('layouts.category.index', compact('category'));
     }
 
     /**

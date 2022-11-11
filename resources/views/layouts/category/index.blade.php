@@ -27,11 +27,19 @@
                                     <th>Tools</th>
                                 </thead>
                                 <tbody>
+                                    @forelse ($category as $c)
                                     <tr>
-                                        <td>1</td>
-                                        <td>1</td>
-                                        <td>1</td>
+                                        <td>{{ $loop->iteratioon }}</td>
+                                        <td>{{ $c->name-category }}</td>
+                                        <td>&nbsp;</td>
                                     </tr>
+                                        
+                                    @empty
+                                        <tr>
+                                            <td colspan="3" class="text-center">Belum ada data</td>
+                                        </tr>
+                                    @endforelse
+
                                 </tbody>
                             </table>
                         </div>
