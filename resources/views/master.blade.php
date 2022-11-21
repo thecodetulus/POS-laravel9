@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="../node_modules/owl.carousel/dist/stisla/owl.theme.default.min.css">
 
   <!-- Template CSS -->
-  <link rel="stylesheet" href="stisla/css/style.css">
-  <link rel="stylesheet" href="stisla/css/components.css">
+  <link rel="stylesheet" href="{{ asset('stisla/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('stisla/css/components.css') }}">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="../stisla/js/stisla.js"></script>
+  <script src="{{ asset('stisla/js/stisla.js') }}"></script>
 
   <!-- JS Libraies -->
   <script src="../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -53,10 +53,10 @@
   <script src="../node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
 
   <!-- Template JS File -->
-  <script src="stisla/js/scripts.js"></script>
-  <script src="stisla/js/custom.js"></script>
+  <script src="{{ asset('stisla/js/scripts.js') }}"></script>
+  <script src="{{ asset('stisla/js/custom.js') }}"></script>
 
   <!-- Page Specific JS File -->
-  <script src="stisla/js/page/index.js"></script>
+  <script src="{{ asset('stisla/js/page/index.js') }}"></script>
 </body>
 </html>
