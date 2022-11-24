@@ -31,7 +31,13 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $c->name_category }}</td>
-                                        <td>&nbsp;</td>
+                                        <td><a href="#" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
+                                        <form action="{{ route('category.destroy',$c->id) }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                        </form>
+                                        </td>
                                     </tr>
                                         
                                     @empty
