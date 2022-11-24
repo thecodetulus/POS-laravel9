@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 // Rute baru mengarahkan kategory Controller
 Route::resource('category', App\Http\Controllers\CategoryController::class);
+Route::resource('product', App\Http\Controllers\ProductController::class);
