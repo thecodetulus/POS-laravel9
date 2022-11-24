@@ -29,7 +29,7 @@
                                 <tbody>
                                     @forelse ($category as $c)
                                     <tr>
-                                        <td>{{ $loop->iteratioon }}</td>
+                                        <td>{{ $loop->iteration }}</td>
                                         <td>{{ $c->name_category }}</td>
                                         <td>&nbsp;</td>
                                     </tr>

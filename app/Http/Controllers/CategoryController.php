@@ -40,6 +40,10 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
+        $d = new Category();
+        $d->name_category = $request->input('name_category');
+        $d->save();
+        return redirect()->route('category.index');
     }
 
     /**

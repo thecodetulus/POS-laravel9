@@ -19,7 +19,8 @@
                         <h2>Halaman Add Data Category</h2>
                     </div>
                     <div class="card-body">
-                        <form action="#" method="post">
+                        <form action="{{ route('category.store') }}" method="post">
+                            @csrf
                             <table class="table table-bordered">
                                 <tr>
                                     <td>Name Category</td>
