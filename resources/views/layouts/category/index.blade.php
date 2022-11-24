@@ -30,7 +30,7 @@
                                     @forelse ($category as $c)
                                     <tr>
                                         <td>{{ $loop->iteratioon }}</td>
-                                        <td>{{ $c->name-category }}</td>
+                                        <td>{{ $c->name_category }}</td>
                                         <td>&nbsp;</td>
                                     </tr>
                                         
