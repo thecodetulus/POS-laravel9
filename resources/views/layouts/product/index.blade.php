@@ -39,7 +39,14 @@
                                         <td>{{ $pr->price }}</td>
                                         <td>{{ $pr->stock }}</td>
                                         <td>{{ $pr->category->name_category }}</td>
-                                        <td>&nbsp;</td>
+                                        <td>
+                                            <a href="{{ route('product.edit', $pr->id) }}" class="btn btn-outline-warning">Edit</a>
+                                            <form action="{{ route('product.destroy', $pr->id) }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                        </td>
                                     </tr>
                                 @empty
                                     <tr>
