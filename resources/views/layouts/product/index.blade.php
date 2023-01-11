@@ -38,7 +38,7 @@
                                         <td>{{ $pr->description }}</td>
                                         <td>{{ $pr->price }}</td>
                                         <td>{{ $pr->stock }}</td>
-                                        <td>{{ $pr->category_id }}</td>
+                                        <td>{{ $pr->category->name_category }}</td>
                                         <td>&nbsp;</td>
                                     </tr>
                                 @empty

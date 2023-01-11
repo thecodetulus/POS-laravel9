@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name_product')->nullable();
             $table->longText('description')->nullable();
-            $table->string('stok')->nullable();
+            $table->string('stock')->nullable();
             $table->string('price');
             $table->bigInteger('category_id')->unsigned();
             $table->timestamps();

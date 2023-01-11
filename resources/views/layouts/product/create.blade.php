@@ -19,7 +19,7 @@
                         <h2>Halaman Add Data Product</h2>
                     </div>
                     <div class="card-body">
-                        <form action="{{ route('category.store') }}" method="post">
+                        <form action="{{ route('product.store') }}" method="post">
                             @csrf
                             <table class="table table-bordered">
                                 <tr>
